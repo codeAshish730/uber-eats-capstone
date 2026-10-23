@@ -1,0 +1,201 @@
+customer_id,customer_name,city,signup_date
+1,Allison Hill,East Jill,2026-02-28
+2,Angie Henderson,North Jefferyhaven,2026-01-05
+3,Michelle Miles,Robinsonshire,2025-05-13
+4,Olivia Moore,Petersonberg,2025-03-28
+5,Ashley James,Melanieview,2026-06-04
+6,Kimberly Dudley,Millerport,2026-06-20
+7,Shannon Ray,North Donnaport,2026-10-12
+8,Sharon James,Reidstad,2025-02-17
+9,Michael Miles,New Cynthiaside,2026-04-07
+10,James Mayo,Lake Mark,2026-05-06
+11,Rodney Trujillo,Adamsborough,2026-08-20
+12,Michelle Lewis,Fostermouth,2025-02-03
+13,Patrick Ryan,Hurstfurt,2025-07-13
+14,Brenda Snyder PhD,East Courtneychester,2025-12-31
+15,Kyle Mcdonald,Tashatown,2026-03-03
+16,Stephen Potter,Danielchester,2025-02-14
+17,Nathan Cortez,New Rita,2026-07-20
+18,Mark Lynch,West Kathryn,2025-11-20
+19,Kerry Smith,Tracyville,2026-09-01
+20,Sandra Parker,East Natalieland,2024-12-23
+21,Mr. Philip Cannon,Lake Thomas,2025-11-27
+22,Shane Henderson,New Karina,2026-03-10
+23,Jennifer Powers,Samuelhaven,2025-09-17
+24,Austin Smith,New Jeffrey,2024-12-12
+25,Crystal Whitehead,Chadbury,2025-05-13
+26,Mr. Nathaniel Khan,Sanchezfort,2026-06-04
+27,Brent Jordan,Jenkinston,2026-02-26
+28,Mrs. Jennifer Morgan,East Jamesside,2025-09-14
+29,Donald Wright,South Lindseyside,2025-01-01
+30,Kimberly Smith,Port Melindaburgh,2025-08-15
+31,Dr. Steven Martin,South Josephmouth,2025-05-18
+32,Monica Logan,Mooreport,2025-03-30
+33,Noah Brown,Brianshire,2025-10-05
+34,Kim Brown,Port Jacobland,2026-02-27
+35,Bryan Zamora,New Brooke,2026-01-17
+36,Kevin Mills,Jamesmouth,2025-04-14
+37,Michael Evans,Sarahland,2024-10-28
+38,Kristine Garcia,New Joseph,2026-09-04
+39,Sherry Wood,South Martha,2026-03-20
+40,Victoria Valdez,Lake Lisaport,2026-09-03
+41,Shawn Baker,Lake Angelaview,2025-05-15
+42,Grant Watts,Williamview,2026-08-14
+43,Anna Henderson,Bradleymouth,2026-05-08
+44,Deborah Figueroa,Hoffmanville,2024-12-16
+45,Stephanie Gardner,Brandiberg,2025-09-01
+46,Jacob Fitzpatrick,West Jasonbury,2026-02-21
+47,Justin Baxter,East Michelle,2026-10-05
+48,Sierra Johnson,Kimberlychester,2026-05-31
+49,Rita Adams,South Monicafort,2025-04-02
+50,Julia Torres,East Andrew,2025-03-12
+51,Sean Rasmussen,Michaelhaven,2025-08-10
+52,Ms. Teresa Wilson,Gregoryview,2024-11-18
+53,Haley Hartman,Obrienhaven,2025-01-14
+54,Cheryl Williams,Smithside,2026-03-08
+55,Nancy Gonzalez,Jonesmouth,2026-01-20
+56,Belinda Mccullough,Elizabethmouth,2025-08-12
+57,Cameron Fisher,Byrdburgh,2026-01-14
+58,Joshua Smith,Jasonshire,2026-01-08
+59,Jeremy Lowe,Leonburgh,2026-02-15
+60,Matthew Harvey,Port Stephaniebury,2026-02-25
+61,Curtis Johnson,South Cheryl,2026-05-06
+62,Stephen Johnston,Snyderbury,2025-02-06
+63,Stephanie Dalton,Port Ronaldburgh,2026-06-01
+64,Julie Grant,South Dennismouth,2026-02-21
+65,Linda Dodson DVM,Rivasside,2025-09-12
+66,Scott Cole,Port Dana,2026-05-04
+67,Lori Hill,Lake Justinview,2025-06-24
+68,Angela Hernandez,Bensonborough,2024-12-07
+69,Joshua Perry,Port Robert,2026-08-14
+70,Melissa Gates,Woodsstad,2025-05-28
+71,Steven Houston,South Jeffrey,2025-09-05
+72,George Shelton,Ramseymouth,2026-08-25
+73,Ms. Susan Vargas,North Dawnberg,2026-07-17
+74,David Murphy,Murphyfurt,2025-05-13
+75,Jennifer Conley,Smithside,2024-11-29
+76,Courtney Jones,Port Anthonybury,2025-03-16
+77,Christian Martinez,New Staciemouth,2026-03-17
+78,Carol Lawson,Port Loriport,2025-01-09
+79,Eric Byrd,Sandersborough,2024-12-16
+80,Lori Garcia,Melissaville,2026-05-27
+81,Amanda Patel,Caseymouth,2024-10-31
+82,John Hamilton,Cynthiamouth,2026-03-23
+83,Nicholas Sheppard,Christinaside,2026-05-11
+84,Roger Vargas,Melissaland,2025-05-13
+85,Paul Hudson,Rogersfort,2026-07-06
+86,Daniel Salinas,Joshuaview,2025-12-02
+87,Cheryl Allen,Freemanbury,2026-03-10
+88,Katherine Mcguire,West Jeffreybury,2025-06-02
+89,Kara Schmidt,Barajasside,2025-06-20
+90,Denise King,Lake Jamesville,2026-04-18
+91,Melissa Lee,Hillshire,2026-10-05
+92,Diane Garcia,West Jeremy,2025-03-02
+93,Joseph Hill,New Kellyberg,2026-01-31
+94,Ashley Smith,Taylormouth,2025-06-28
+95,Dawn Hensley,Port Cameronfort,2024-12-15
+96,Amy Hernandez,Christopherbury,2025-01-16
+97,Lisa Gibbs,Port Alexandra,2025-09-16
+98,Scott Branch,Ashleyton,2026-01-10
+99,Theresa Clark,West Donna,2025-02-13
+100,Benjamin Smith,Norrisfort,2025-05-22
+101,Michael Warner,Jonesbury,2026-08-28
+102,Lori Guerrero,South Danny,2025-04-04
+103,Derek Thomas,East Laurashire,2026-08-26
+104,John Torres,Benderhaven,2025-11-20
+105,Kyle Preston,Cassandratown,2024-12-27
+106,Sara Johnston,Port Emilyview,2025-12-17
+107,Casey Stone,Moonburgh,2026-10-20
+108,Robert Costa,Baileymouth,2025-06-13
+109,Christopher Jenkins,Robertsfurt,2026-06-08
+110,Jordan Edwards,Darrellfurt,2026-07-16
+111,April Booth,Gutierrezborough,2025-11-04
+112,Kathleen Ramos,East Josephberg,2026-08-31
+113,Michael Martinez,Lake Eric,2025-11-28
+114,Anna Gay,South Staceyberg,2025-10-21
+115,Katrina Hill,Bairdbury,2025-09-20
+116,Connor Greene,Port Chad,2026-05-09
+117,Gina French,Loriport,2026-04-05
+118,Lauren Keller,South Amanda,2025-07-01
+119,Kimberly Gibson,Mollybury,2025-12-13
+120,Reginald Williams,Thorntonfurt,2025-07-31
+121,Samantha Pollard,Hannaberg,2025-10-24
+122,Sheila Sawyer,Garciamouth,2024-11-02
+123,Seth Booker,South Kimberlyview,2025-06-26
+124,Marie Christian,Finleyfort,2026-07-21
+125,Barry Welch,Wendyland,2025-09-04
+126,Mark Brennan,Jacksonport,2026-08-13
+127,Robert Carter,Ryanbury,2025-11-14
+128,Rebecca Jackson,New Monicabury,2025-10-20
+129,Crystal Little,Scotttown,2026-08-10
+130,Dwayne Payne,South Sierrashire,2025-05-28
+131,Melissa Bryant,Jamesfurt,2026-07-07
+132,James Howard,Victoriaport,2024-11-07
+133,Jennifer Smith,New Julieport,2026-05-12
+134,Robert Robinson,New John,2026-04-27
+135,Melanie Taylor,Lake Debbieport,2026-05-21
+136,Jacob Anderson,Markchester,2025-02-27
+137,Joshua Mata,Mariaview,2026-08-21
+138,Tracy Phillips,Lindamouth,2026-09-25
+139,Vincent Dalton,Coffeyside,2025-07-16
+140,Alexis Herrera,Richardsonview,2025-12-23
+141,Teresa Rodriguez,South Angel,2026-07-30
+142,Suzanne Walker,Lake Madisonport,2026-02-08
+143,Andrew Johnson,Wilsonbury,2026-08-01
+144,Jesse Santiago,Matthewsberg,2026-07-31
+145,Sandra Gilbert,Antoniostad,2025-03-29
+146,David Cox,Amystad,2024-12-05
+147,Walter Rush,Davisborough,2026-02-03
+148,Alison Buchanan,East Kristin,2025-03-21
+149,Kristen Willis,West Kim,2026-05-21
+150,Destiny Riggs,New John,2025-02-26
+151,Allison Smith,New Mario,2025-02-26
+152,Patrick Fox,South Shanestad,2025-11-01
+153,Jonathan Dougherty,Lake Kristahaven,2025-05-30
+154,Amanda Lutz,Simmonsville,2025-10-15
+155,Angel Miller,North David,2026-01-21
+156,Michelle James,Shawnchester,2025-01-02
+157,Sarah Curtis,South Shannon,2025-04-07
+158,Jesse Perry,West Ronaldview,2025-07-22
+159,Thomas Jones,North Ryanstad,2026-06-07
+160,Laurie Hoffman,Elizabethchester,2025-07-07
+161,Nicole Parrish,West Carolinestad,2025-01-05
+162,Brittney Olson,West Meganstad,2025-01-13
+163,Darrell Patterson,New Sarahview,2024-11-12
+164,Phillip Dorsey,Adamberg,2025-12-09
+165,Charles Schultz,North Julieborough,2025-07-23
+166,Christopher Collins,Kimberlyshire,2025-12-31
+167,Brittney Webster,Lake Christophermouth,2026-02-17
+168,Mr. Donald Fischer,West Russellport,2026-03-01
+169,Kelsey Parker,South Tracey,2024-12-01
+170,Tony Saunders,Keithville,2024-10-27
+171,Casey James,New Angelica,2026-02-22
+172,James Harmon,Smithland,2026-07-14
+173,Laura Mckinney,Robertsfurt,2024-11-06
+174,Robert Montgomery,Christopherville,2025-04-17
+175,Kelly Foster,Juliebury,2025-06-22
+176,Jordan Wilson,Port Michael,2026-04-06
+177,Robin Young,West James,2026-01-05
+178,Mary Thompson,Marshallshire,2026-04-30
+179,Thomas Cunningham,Michellemouth,2025-02-09
+180,Jeremy Turner,Brittanystad,2025-10-27
+181,Jesse Brown,Chaseland,2026-01-14
+182,Julie Spencer,South Reginashire,2026-02-10
+183,John Hernandez,South Dalemouth,2026-10-10
+184,Matthew Williams,Ritterhaven,2025-11-08
+185,Jake Campbell,Schroederton,2026-05-21
+186,Andrea Davis,Mitchellberg,2025-06-22
+187,Brenda Bailey,Andersonland,2025-06-05
+188,Rickey Li,Lake Ellenhaven,2025-07-13
+189,Christopher Lewis,Leeberg,2025-02-12
+190,Richard Romero,Lake Matthewberg,2026-01-01
+191,Christopher Schwartz,Lake Samuel,2025-08-18
+192,Cynthia Wallace,Karenmouth,2025-04-11
+193,Vincent Mueller,West Erika,2025-12-12
+194,Randy Strickland,Burchborough,2026-05-30
+195,David Davidson,Angelaville,2026-03-26
+196,Belinda Miller,West Shannon,2025-11-01
+197,Anna Lozano,Wilkersontown,2025-08-21
+198,James Hughes,West Jeffreymouth,2026-09-02
+199,Marie Moody,North Justin,2026-06-20
+200,Brenda Thornton,Gilbertland,2024-11-04
