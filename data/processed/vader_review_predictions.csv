@@ -1,0 +1,501 @@
+review_id,order_id,review_text,review_rating,sentiment,vader_sentiment
+1,1,"Order was okay, nothing special",4,positive,negative
+2,2,Food was cold and delivery was late,1,negative,neutral
+3,3,Food was cold and delivery was late,4,positive,neutral
+4,4,"Order was okay, nothing special",5,positive,negative
+5,5,"Order was okay, nothing special",5,positive,negative
+6,6,Food was cold and delivery was late,4,positive,neutral
+7,7,Very disappointed with this experience,4,positive,negative
+8,8,Very disappointed with this experience,4,positive,negative
+9,9,"Order was okay, nothing special",3,neutral,negative
+10,10,Food was cold and delivery was late,2,negative,neutral
+11,11,"Order was okay, nothing special",5,positive,negative
+12,12,Excellent food and quick delivery,5,positive,positive
+13,13,"Order was okay, nothing special",2,negative,negative
+14,14,"Delicious food, will order again",5,positive,positive
+15,15,Good quality and friendly driver,4,positive,positive
+16,16,Very disappointed with this experience,5,positive,negative
+17,17,Good quality and friendly driver,1,negative,positive
+18,18,Excellent food and quick delivery,5,positive,positive
+19,19,"Order was okay, nothing special",3,neutral,negative
+20,20,Excellent food and quick delivery,5,positive,positive
+21,21,"Order was okay, nothing special",1,negative,negative
+22,22,Food was cold and delivery was late,5,positive,neutral
+23,23,Good quality and friendly driver,4,positive,positive
+24,24,Very disappointed with this experience,1,negative,negative
+25,25,Very disappointed with this experience,5,positive,negative
+26,26,Excellent food and quick delivery,2,negative,positive
+27,27,"Order was okay, nothing special",1,negative,negative
+28,28,"Delicious food, will order again",5,positive,positive
+29,29,Very disappointed with this experience,3,neutral,negative
+30,30,Very disappointed with this experience,1,negative,negative
+31,31,Good quality and friendly driver,5,positive,positive
+32,32,Excellent food and quick delivery,4,positive,positive
+33,33,"Order was okay, nothing special",5,positive,negative
+34,34,"Order was okay, nothing special",5,positive,negative
+35,35,"Delicious food, will order again",3,neutral,positive
+36,36,"Order was okay, nothing special",3,neutral,negative
+37,37,Good quality and friendly driver,3,neutral,positive
+38,38,Food was cold and delivery was late,1,negative,neutral
+39,39,"Delicious food, will order again",5,positive,positive
+40,40,"Delicious food, will order again",3,neutral,positive
+41,41,"Delicious food, will order again",5,positive,positive
+42,42,Good quality and friendly driver,1,negative,positive
+43,43,"Delicious food, will order again",4,positive,positive
+44,44,Very disappointed with this experience,2,negative,negative
+45,45,Very disappointed with this experience,1,negative,negative
+46,46,"Delicious food, will order again",3,neutral,positive
+47,47,"Delicious food, will order again",5,positive,positive
+48,48,Excellent food and quick delivery,3,neutral,positive
+49,49,"Order was okay, nothing special",1,negative,negative
+50,50,Food was cold and delivery was late,5,positive,neutral
+51,51,Excellent food and quick delivery,3,neutral,positive
+52,52,Good quality and friendly driver,2,negative,positive
+53,53,Very disappointed with this experience,3,neutral,negative
+54,54,Good quality and friendly driver,3,neutral,positive
+55,55,Excellent food and quick delivery,1,negative,positive
+56,56,Very disappointed with this experience,2,negative,negative
+57,57,Very disappointed with this experience,2,negative,negative
+58,58,"Delicious food, will order again",4,positive,positive
+59,59,Good quality and friendly driver,2,negative,positive
+60,60,Good quality and friendly driver,2,negative,positive
+61,61,"Order was okay, nothing special",2,negative,negative
+62,62,Very disappointed with this experience,1,negative,negative
+63,63,Good quality and friendly driver,1,negative,positive
+64,64,Food was cold and delivery was late,5,positive,neutral
+65,65,Food was cold and delivery was late,4,positive,neutral
+66,66,"Order was okay, nothing special",4,positive,negative
+67,67,Food was cold and delivery was late,4,positive,neutral
+68,68,"Delicious food, will order again",2,negative,positive
+69,69,Food was cold and delivery was late,5,positive,neutral
+70,70,"Delicious food, will order again",3,neutral,positive
+71,71,Excellent food and quick delivery,3,neutral,positive
+72,72,Excellent food and quick delivery,1,negative,positive
+73,73,Food was cold and delivery was late,4,positive,neutral
+74,74,"Order was okay, nothing special",4,positive,negative
+75,75,Good quality and friendly driver,4,positive,positive
+76,76,"Delicious food, will order again",5,positive,positive
+77,77,Food was cold and delivery was late,4,positive,neutral
+78,78,"Delicious food, will order again",4,positive,positive
+79,79,"Order was okay, nothing special",3,neutral,negative
+80,80,Food was cold and delivery was late,5,positive,neutral
+81,81,"Order was okay, nothing special",1,negative,negative
+82,82,Good quality and friendly driver,4,positive,positive
+83,83,"Order was okay, nothing special",3,neutral,negative
+84,84,Very disappointed with this experience,1,negative,negative
+85,85,Excellent food and quick delivery,5,positive,positive
+86,86,"Delicious food, will order again",3,neutral,positive
+87,87,"Order was okay, nothing special",5,positive,negative
+88,88,"Delicious food, will order again",3,neutral,positive
+89,89,Good quality and friendly driver,3,neutral,positive
+90,90,Good quality and friendly driver,1,negative,positive
+91,91,Good quality and friendly driver,5,positive,positive
+92,92,"Order was okay, nothing special",4,positive,negative
+93,93,"Delicious food, will order again",2,negative,positive
+94,94,"Delicious food, will order again",5,positive,positive
+95,95,Food was cold and delivery was late,5,positive,neutral
+96,96,Good quality and friendly driver,2,negative,positive
+97,97,Good quality and friendly driver,5,positive,positive
+98,98,Excellent food and quick delivery,1,negative,positive
+99,99,Excellent food and quick delivery,1,negative,positive
+100,100,"Order was okay, nothing special",1,negative,negative
+101,101,Very disappointed with this experience,1,negative,negative
+102,102,"Delicious food, will order again",4,positive,positive
+103,103,Good quality and friendly driver,2,negative,positive
+104,104,"Delicious food, will order again",3,neutral,positive
+105,105,Good quality and friendly driver,2,negative,positive
+106,106,Excellent food and quick delivery,1,negative,positive
+107,107,Very disappointed with this experience,1,negative,negative
+108,108,Excellent food and quick delivery,5,positive,positive
+109,109,"Delicious food, will order again",2,negative,positive
+110,110,Very disappointed with this experience,1,negative,negative
+111,111,"Delicious food, will order again",1,negative,positive
+112,112,Excellent food and quick delivery,5,positive,positive
+113,113,Food was cold and delivery was late,4,positive,neutral
+114,114,"Delicious food, will order again",5,positive,positive
+115,115,Food was cold and delivery was late,1,negative,neutral
+116,116,"Delicious food, will order again",2,negative,positive
+117,117,Good quality and friendly driver,3,neutral,positive
+118,118,"Order was okay, nothing special",1,negative,negative
+119,119,"Delicious food, will order again",4,positive,positive
+120,120,Good quality and friendly driver,4,positive,positive
+121,121,"Delicious food, will order again",3,neutral,positive
+122,122,Good quality and friendly driver,2,negative,positive
+123,123,Excellent food and quick delivery,3,neutral,positive
+124,124,Excellent food and quick delivery,4,positive,positive
+125,125,"Order was okay, nothing special",3,neutral,negative
+126,126,Excellent food and quick delivery,3,neutral,positive
+127,127,Good quality and friendly driver,2,negative,positive
+128,128,"Order was okay, nothing special",1,negative,negative
+129,129,"Order was okay, nothing special",2,negative,negative
+130,130,Very disappointed with this experience,4,positive,negative
+131,131,Food was cold and delivery was late,4,positive,neutral
+132,132,Excellent food and quick delivery,2,negative,positive
+133,133,Very disappointed with this experience,4,positive,negative
+134,134,Food was cold and delivery was late,5,positive,neutral
+135,135,"Delicious food, will order again",1,negative,positive
+136,136,"Order was okay, nothing special",3,neutral,negative
+137,137,Excellent food and quick delivery,1,negative,positive
+138,138,Excellent food and quick delivery,1,negative,positive
+139,139,Very disappointed with this experience,3,neutral,negative
+140,140,"Order was okay, nothing special",1,negative,negative
+141,141,"Order was okay, nothing special",2,negative,negative
+142,142,"Delicious food, will order again",1,negative,positive
+143,143,Excellent food and quick delivery,4,positive,positive
+144,144,Good quality and friendly driver,2,negative,positive
+145,145,"Delicious food, will order again",3,neutral,positive
+146,146,"Order was okay, nothing special",5,positive,negative
+147,147,Excellent food and quick delivery,5,positive,positive
+148,148,"Delicious food, will order again",4,positive,positive
+149,149,"Order was okay, nothing special",4,positive,negative
+150,150,"Order was okay, nothing special",1,negative,negative
+151,151,Very disappointed with this experience,2,negative,negative
+152,152,Excellent food and quick delivery,4,positive,positive
+153,153,"Delicious food, will order again",4,positive,positive
+154,154,Excellent food and quick delivery,5,positive,positive
+155,155,Very disappointed with this experience,3,neutral,negative
+156,156,Good quality and friendly driver,3,neutral,positive
+157,157,"Order was okay, nothing special",1,negative,negative
+158,158,"Delicious food, will order again",1,negative,positive
+159,159,Good quality and friendly driver,5,positive,positive
+160,160,Good quality and friendly driver,1,negative,positive
+161,161,"Order was okay, nothing special",3,neutral,negative
+162,162,"Delicious food, will order again",2,negative,positive
+163,163,Food was cold and delivery was late,5,positive,neutral
+164,164,Excellent food and quick delivery,4,positive,positive
+165,165,"Delicious food, will order again",2,negative,positive
+166,166,Good quality and friendly driver,4,positive,positive
+167,167,Excellent food and quick delivery,3,neutral,positive
+168,168,"Order was okay, nothing special",1,negative,negative
+169,169,"Delicious food, will order again",4,positive,positive
+170,170,"Delicious food, will order again",2,negative,positive
+171,171,Food was cold and delivery was late,1,negative,neutral
+172,172,Food was cold and delivery was late,1,negative,neutral
+173,173,"Delicious food, will order again",5,positive,positive
+174,174,Food was cold and delivery was late,4,positive,neutral
+175,175,"Order was okay, nothing special",1,negative,negative
+176,176,Very disappointed with this experience,3,neutral,negative
+177,177,"Order was okay, nothing special",5,positive,negative
+178,178,"Order was okay, nothing special",1,negative,negative
+179,179,Excellent food and quick delivery,3,neutral,positive
+180,180,Excellent food and quick delivery,3,neutral,positive
+181,181,"Delicious food, will order again",1,negative,positive
+182,182,"Order was okay, nothing special",1,negative,negative
+183,183,Food was cold and delivery was late,5,positive,neutral
+184,184,"Order was okay, nothing special",5,positive,negative
+185,185,Food was cold and delivery was late,5,positive,neutral
+186,186,Food was cold and delivery was late,1,negative,neutral
+187,187,Excellent food and quick delivery,2,negative,positive
+188,188,"Order was okay, nothing special",1,negative,negative
+189,189,"Order was okay, nothing special",5,positive,negative
+190,190,Excellent food and quick delivery,2,negative,positive
+191,191,"Delicious food, will order again",2,negative,positive
+192,192,Excellent food and quick delivery,2,negative,positive
+193,193,"Delicious food, will order again",1,negative,positive
+194,194,Good quality and friendly driver,1,negative,positive
+195,195,"Order was okay, nothing special",5,positive,negative
+196,196,Food was cold and delivery was late,5,positive,neutral
+197,197,Excellent food and quick delivery,1,negative,positive
+198,198,Excellent food and quick delivery,4,positive,positive
+199,199,Very disappointed with this experience,5,positive,negative
+200,200,Food was cold and delivery was late,1,negative,neutral
+201,201,Food was cold and delivery was late,4,positive,neutral
+202,202,Good quality and friendly driver,4,positive,positive
+203,203,Good quality and friendly driver,1,negative,positive
+204,204,"Delicious food, will order again",5,positive,positive
+205,205,Very disappointed with this experience,2,negative,negative
+206,206,Good quality and friendly driver,2,negative,positive
+207,207,Excellent food and quick delivery,5,positive,positive
+208,208,Food was cold and delivery was late,3,neutral,neutral
+209,209,Excellent food and quick delivery,1,negative,positive
+210,210,Good quality and friendly driver,2,negative,positive
+211,211,"Order was okay, nothing special",2,negative,negative
+212,212,"Delicious food, will order again",3,neutral,positive
+213,213,Very disappointed with this experience,2,negative,negative
+214,214,"Order was okay, nothing special",2,negative,negative
+215,215,Very disappointed with this experience,1,negative,negative
+216,216,Food was cold and delivery was late,1,negative,neutral
+217,217,"Delicious food, will order again",5,positive,positive
+218,218,"Order was okay, nothing special",2,negative,negative
+219,219,Excellent food and quick delivery,4,positive,positive
+220,220,Excellent food and quick delivery,1,negative,positive
+221,221,Excellent food and quick delivery,2,negative,positive
+222,222,Excellent food and quick delivery,5,positive,positive
+223,223,Good quality and friendly driver,4,positive,positive
+224,224,"Delicious food, will order again",4,positive,positive
+225,225,"Delicious food, will order again",2,negative,positive
+226,226,Food was cold and delivery was late,2,negative,neutral
+227,227,"Delicious food, will order again",3,neutral,positive
+228,228,Very disappointed with this experience,4,positive,negative
+229,229,"Order was okay, nothing special",2,negative,negative
+230,230,Food was cold and delivery was late,5,positive,neutral
+231,231,"Delicious food, will order again",1,negative,positive
+232,232,Very disappointed with this experience,2,negative,negative
+233,233,"Delicious food, will order again",4,positive,positive
+234,234,Very disappointed with this experience,1,negative,negative
+235,235,"Delicious food, will order again",3,neutral,positive
+236,236,Good quality and friendly driver,4,positive,positive
+237,237,Excellent food and quick delivery,5,positive,positive
+238,238,Food was cold and delivery was late,2,negative,neutral
+239,239,Excellent food and quick delivery,5,positive,positive
+240,240,Excellent food and quick delivery,5,positive,positive
+241,241,Good quality and friendly driver,5,positive,positive
+242,242,Very disappointed with this experience,2,negative,negative
+243,243,"Order was okay, nothing special",2,negative,negative
+244,244,Good quality and friendly driver,1,negative,positive
+245,245,Food was cold and delivery was late,1,negative,neutral
+246,246,Food was cold and delivery was late,4,positive,neutral
+247,247,"Order was okay, nothing special",2,negative,negative
+248,248,Food was cold and delivery was late,1,negative,neutral
+249,249,Excellent food and quick delivery,3,neutral,positive
+250,250,Good quality and friendly driver,2,negative,positive
+251,251,"Order was okay, nothing special",3,neutral,negative
+252,252,Good quality and friendly driver,5,positive,positive
+253,253,"Order was okay, nothing special",1,negative,negative
+254,254,Excellent food and quick delivery,1,negative,positive
+255,255,Very disappointed with this experience,2,negative,negative
+256,256,Food was cold and delivery was late,1,negative,neutral
+257,257,"Order was okay, nothing special",5,positive,negative
+258,258,Excellent food and quick delivery,1,negative,positive
+259,259,Food was cold and delivery was late,4,positive,neutral
+260,260,Very disappointed with this experience,5,positive,negative
+261,261,Good quality and friendly driver,4,positive,positive
+262,262,Food was cold and delivery was late,3,neutral,neutral
+263,263,Food was cold and delivery was late,1,negative,neutral
+264,264,Good quality and friendly driver,2,negative,positive
+265,265,Excellent food and quick delivery,2,negative,positive
+266,266,"Delicious food, will order again",4,positive,positive
+267,267,Food was cold and delivery was late,4,positive,neutral
+268,268,Food was cold and delivery was late,1,negative,neutral
+269,269,"Order was okay, nothing special",5,positive,negative
+270,270,"Order was okay, nothing special",1,negative,negative
+271,271,"Order was okay, nothing special",2,negative,negative
+272,272,Food was cold and delivery was late,5,positive,neutral
+273,273,"Order was okay, nothing special",2,negative,negative
+274,274,"Order was okay, nothing special",3,neutral,negative
+275,275,Food was cold and delivery was late,4,positive,neutral
+276,276,"Delicious food, will order again",2,negative,positive
+277,277,"Delicious food, will order again",3,neutral,positive
+278,278,Good quality and friendly driver,2,negative,positive
+279,279,Good quality and friendly driver,2,negative,positive
+280,280,Excellent food and quick delivery,5,positive,positive
+281,281,Excellent food and quick delivery,3,neutral,positive
+282,282,Food was cold and delivery was late,1,negative,neutral
+283,283,"Order was okay, nothing special",4,positive,negative
+284,284,"Order was okay, nothing special",2,negative,negative
+285,285,Good quality and friendly driver,2,negative,positive
+286,286,Good quality and friendly driver,5,positive,positive
+287,287,Food was cold and delivery was late,5,positive,neutral
+288,288,Food was cold and delivery was late,5,positive,neutral
+289,289,Very disappointed with this experience,2,negative,negative
+290,290,Excellent food and quick delivery,4,positive,positive
+291,291,Very disappointed with this experience,4,positive,negative
+292,292,Food was cold and delivery was late,5,positive,neutral
+293,293,"Order was okay, nothing special",4,positive,negative
+294,294,Good quality and friendly driver,1,negative,positive
+295,295,"Delicious food, will order again",4,positive,positive
+296,296,"Delicious food, will order again",2,negative,positive
+297,297,Food was cold and delivery was late,3,neutral,neutral
+298,298,"Order was okay, nothing special",5,positive,negative
+299,299,Food was cold and delivery was late,5,positive,neutral
+300,300,Food was cold and delivery was late,5,positive,neutral
+301,301,Excellent food and quick delivery,4,positive,positive
+302,302,Excellent food and quick delivery,1,negative,positive
+303,303,"Order was okay, nothing special",5,positive,negative
+304,304,Excellent food and quick delivery,4,positive,positive
+305,305,Very disappointed with this experience,4,positive,negative
+306,306,"Order was okay, nothing special",1,negative,negative
+307,307,"Order was okay, nothing special",4,positive,negative
+308,308,Food was cold and delivery was late,1,negative,neutral
+309,309,Very disappointed with this experience,1,negative,negative
+310,310,"Delicious food, will order again",4,positive,positive
+311,311,Food was cold and delivery was late,2,negative,neutral
+312,312,Good quality and friendly driver,3,neutral,positive
+313,313,Food was cold and delivery was late,1,negative,neutral
+314,314,Excellent food and quick delivery,4,positive,positive
+315,315,"Delicious food, will order again",3,neutral,positive
+316,316,Food was cold and delivery was late,4,positive,neutral
+317,317,Very disappointed with this experience,5,positive,negative
+318,318,Excellent food and quick delivery,4,positive,positive
+319,319,"Order was okay, nothing special",2,negative,negative
+320,320,"Delicious food, will order again",4,positive,positive
+321,321,Food was cold and delivery was late,3,neutral,neutral
+322,322,"Delicious food, will order again",4,positive,positive
+323,323,"Delicious food, will order again",1,negative,positive
+324,324,"Delicious food, will order again",1,negative,positive
+325,325,"Order was okay, nothing special",3,neutral,negative
+326,326,Very disappointed with this experience,1,negative,negative
+327,327,Good quality and friendly driver,4,positive,positive
+328,328,Good quality and friendly driver,5,positive,positive
+329,329,Very disappointed with this experience,5,positive,negative
+330,330,Food was cold and delivery was late,1,negative,neutral
+331,331,Very disappointed with this experience,3,neutral,negative
+332,332,"Delicious food, will order again",1,negative,positive
+333,333,Very disappointed with this experience,3,neutral,negative
+334,334,Excellent food and quick delivery,1,negative,positive
+335,335,"Order was okay, nothing special",3,neutral,negative
+336,336,"Order was okay, nothing special",5,positive,negative
+337,337,Excellent food and quick delivery,3,neutral,positive
+338,338,Good quality and friendly driver,2,negative,positive
+339,339,"Delicious food, will order again",5,positive,positive
+340,340,"Delicious food, will order again",1,negative,positive
+341,341,Very disappointed with this experience,2,negative,negative
+342,342,Food was cold and delivery was late,3,neutral,neutral
+343,343,Food was cold and delivery was late,5,positive,neutral
+344,344,Excellent food and quick delivery,4,positive,positive
+345,345,"Delicious food, will order again",5,positive,positive
+346,346,"Delicious food, will order again",2,negative,positive
+347,347,"Delicious food, will order again",2,negative,positive
+348,348,Good quality and friendly driver,3,neutral,positive
+349,349,Good quality and friendly driver,5,positive,positive
+350,350,"Delicious food, will order again",4,positive,positive
+351,351,Good quality and friendly driver,1,negative,positive
+352,352,Excellent food and quick delivery,3,neutral,positive
+353,353,Good quality and friendly driver,4,positive,positive
+354,354,"Order was okay, nothing special",5,positive,negative
+355,355,Very disappointed with this experience,1,negative,negative
+356,356,"Order was okay, nothing special",5,positive,negative
+357,357,"Delicious food, will order again",5,positive,positive
+358,358,Good quality and friendly driver,4,positive,positive
+359,359,Very disappointed with this experience,3,neutral,negative
+360,360,"Delicious food, will order again",1,negative,positive
+361,361,Food was cold and delivery was late,4,positive,neutral
+362,362,Excellent food and quick delivery,1,negative,positive
+363,363,"Order was okay, nothing special",2,negative,negative
+364,364,Good quality and friendly driver,1,negative,positive
+365,365,Excellent food and quick delivery,2,negative,positive
+366,366,Good quality and friendly driver,1,negative,positive
+367,367,"Delicious food, will order again",2,negative,positive
+368,368,"Order was okay, nothing special",2,negative,negative
+369,369,Food was cold and delivery was late,5,positive,neutral
+370,370,"Delicious food, will order again",1,negative,positive
+371,371,Good quality and friendly driver,4,positive,positive
+372,372,"Delicious food, will order again",5,positive,positive
+373,373,Food was cold and delivery was late,4,positive,neutral
+374,374,Good quality and friendly driver,4,positive,positive
+375,375,"Order was okay, nothing special",1,negative,negative
+376,376,Good quality and friendly driver,2,negative,positive
+377,377,Excellent food and quick delivery,1,negative,positive
+378,378,Food was cold and delivery was late,5,positive,neutral
+379,379,"Delicious food, will order again",3,neutral,positive
+380,380,"Order was okay, nothing special",5,positive,negative
+381,381,Good quality and friendly driver,3,neutral,positive
+382,382,"Order was okay, nothing special",5,positive,negative
+383,383,"Delicious food, will order again",5,positive,positive
+384,384,Very disappointed with this experience,4,positive,negative
+385,385,"Order was okay, nothing special",3,neutral,negative
+386,386,Very disappointed with this experience,2,negative,negative
+387,387,Good quality and friendly driver,2,negative,positive
+388,388,Good quality and friendly driver,2,negative,positive
+389,389,"Order was okay, nothing special",3,neutral,negative
+390,390,Good quality and friendly driver,1,negative,positive
+391,391,Food was cold and delivery was late,3,neutral,neutral
+392,392,Good quality and friendly driver,4,positive,positive
+393,393,Food was cold and delivery was late,5,positive,neutral
+394,394,Food was cold and delivery was late,5,positive,neutral
+395,395,Good quality and friendly driver,2,negative,positive
+396,396,Food was cold and delivery was late,2,negative,neutral
+397,397,Food was cold and delivery was late,2,negative,neutral
+398,398,Excellent food and quick delivery,1,negative,positive
+399,399,Good quality and friendly driver,5,positive,positive
+400,400,Food was cold and delivery was late,4,positive,neutral
+401,401,Good quality and friendly driver,3,neutral,positive
+402,402,Food was cold and delivery was late,2,negative,neutral
+403,403,Very disappointed with this experience,1,negative,negative
+404,404,"Delicious food, will order again",3,neutral,positive
+405,405,Good quality and friendly driver,2,negative,positive
+406,406,Good quality and friendly driver,4,positive,positive
+407,407,Very disappointed with this experience,2,negative,negative
+408,408,Very disappointed with this experience,3,neutral,negative
+409,409,Excellent food and quick delivery,1,negative,positive
+410,410,"Order was okay, nothing special",4,positive,negative
+411,411,Food was cold and delivery was late,4,positive,neutral
+412,412,Good quality and friendly driver,2,negative,positive
+413,413,Excellent food and quick delivery,5,positive,positive
+414,414,Very disappointed with this experience,3,neutral,negative
+415,415,"Delicious food, will order again",3,neutral,positive
+416,416,"Order was okay, nothing special",3,neutral,negative
+417,417,Very disappointed with this experience,2,negative,negative
+418,418,Very disappointed with this experience,4,positive,negative
+419,419,Good quality and friendly driver,1,negative,positive
+420,420,"Delicious food, will order again",4,positive,positive
+421,421,Excellent food and quick delivery,2,negative,positive
+422,422,"Delicious food, will order again",5,positive,positive
+423,423,Excellent food and quick delivery,3,neutral,positive
+424,424,Excellent food and quick delivery,4,positive,positive
+425,425,Very disappointed with this experience,2,negative,negative
+426,426,"Order was okay, nothing special",3,neutral,negative
+427,427,Excellent food and quick delivery,3,neutral,positive
+428,428,Excellent food and quick delivery,5,positive,positive
+429,429,"Delicious food, will order again",2,negative,positive
+430,430,Very disappointed with this experience,5,positive,negative
+431,431,Food was cold and delivery was late,3,neutral,neutral
+432,432,Food was cold and delivery was late,1,negative,neutral
+433,433,Excellent food and quick delivery,5,positive,positive
+434,434,"Order was okay, nothing special",1,negative,negative
+435,435,Very disappointed with this experience,4,positive,negative
+436,436,Food was cold and delivery was late,4,positive,neutral
+437,437,Good quality and friendly driver,5,positive,positive
+438,438,Very disappointed with this experience,5,positive,negative
+439,439,Excellent food and quick delivery,3,neutral,positive
+440,440,"Order was okay, nothing special",2,negative,negative
+441,441,"Delicious food, will order again",4,positive,positive
+442,442,Good quality and friendly driver,4,positive,positive
+443,443,Good quality and friendly driver,1,negative,positive
+444,444,Good quality and friendly driver,3,neutral,positive
+445,445,Good quality and friendly driver,3,neutral,positive
+446,446,"Order was okay, nothing special",5,positive,negative
+447,447,Excellent food and quick delivery,2,negative,positive
+448,448,"Delicious food, will order again",4,positive,positive
+449,449,"Delicious food, will order again",4,positive,positive
+450,450,"Order was okay, nothing special",3,neutral,negative
+451,451,Food was cold and delivery was late,4,positive,neutral
+452,452,"Delicious food, will order again",4,positive,positive
+453,453,Food was cold and delivery was late,5,positive,neutral
+454,454,Very disappointed with this experience,1,negative,negative
+455,455,Food was cold and delivery was late,2,negative,neutral
+456,456,Good quality and friendly driver,4,positive,positive
+457,457,Very disappointed with this experience,3,neutral,negative
+458,458,Excellent food and quick delivery,5,positive,positive
+459,459,"Order was okay, nothing special",1,negative,negative
+460,460,Excellent food and quick delivery,4,positive,positive
+461,461,"Delicious food, will order again",3,neutral,positive
+462,462,"Order was okay, nothing special",2,negative,negative
+463,463,Very disappointed with this experience,4,positive,negative
+464,464,"Delicious food, will order again",5,positive,positive
+465,465,Food was cold and delivery was late,2,negative,neutral
+466,466,Food was cold and delivery was late,4,positive,neutral
+467,467,Good quality and friendly driver,5,positive,positive
+468,468,"Order was okay, nothing special",1,negative,negative
+469,469,Good quality and friendly driver,5,positive,positive
+470,470,Good quality and friendly driver,4,positive,positive
+471,471,Very disappointed with this experience,4,positive,negative
+472,472,Food was cold and delivery was late,1,negative,neutral
+473,473,Excellent food and quick delivery,2,negative,positive
+474,474,Good quality and friendly driver,3,neutral,positive
+475,475,"Delicious food, will order again",4,positive,positive
+476,476,Excellent food and quick delivery,3,neutral,positive
+477,477,"Order was okay, nothing special",2,negative,negative
+478,478,"Order was okay, nothing special",2,negative,negative
+479,479,Excellent food and quick delivery,1,negative,positive
+480,480,Good quality and friendly driver,4,positive,positive
+481,481,Excellent food and quick delivery,5,positive,positive
+482,482,"Delicious food, will order again",3,neutral,positive
+483,483,Very disappointed with this experience,4,positive,negative
+484,484,Very disappointed with this experience,4,positive,negative
+485,485,Good quality and friendly driver,4,positive,positive
+486,486,"Delicious food, will order again",1,negative,positive
+487,487,Good quality and friendly driver,5,positive,positive
+488,488,"Delicious food, will order again",5,positive,positive
+489,489,Excellent food and quick delivery,3,neutral,positive
+490,490,Food was cold and delivery was late,5,positive,neutral
+491,491,Excellent food and quick delivery,2,negative,positive
+492,492,Good quality and friendly driver,4,positive,positive
+493,493,"Delicious food, will order again",2,negative,positive
+494,494,Good quality and friendly driver,2,negative,positive
+495,495,Excellent food and quick delivery,3,neutral,positive
+496,496,Good quality and friendly driver,4,positive,positive
+497,497,"Delicious food, will order again",3,neutral,positive
+498,498,Excellent food and quick delivery,3,neutral,positive
+499,499,Good quality and friendly driver,5,positive,positive
+500,500,"Delicious food, will order again",1,negative,positive

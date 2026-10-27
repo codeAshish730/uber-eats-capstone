@@ -1,0 +1,65 @@
+UBER EATS CAPSTONE - DAY 3
+SENTIMENT ANALYSIS EVALUATION
+
+1. DATASET
+- Source: data/raw/reviews.csv
+- Total reviews: 500
+- Text was lowercased, tokenized, stripped of punctuation,
+  filtered for stop words, and lemmatized.
+- Cleaned data: data/processed/cleaned_reviews.csv
+
+2. TF-IDF
+- TF-IDF matrix: data/processed/reviews_tfidf.npz
+- Feature list: data/processed/tfidf_features.csv
+- Matrix dimensions: 500 reviews x 32 features
+- Unigrams and bigrams were included.
+
+3. SUPERVISED SENTIMENT MODEL
+- Algorithm: Linear Support Vector Classifier (LinearSVC)
+- Labels: ratings 1-2 negative, 3 neutral, 4-5 positive
+- Test split: 20%, stratified
+- Accuracy: 0.37
+- Macro F1-score: 0.33
+- Model: models/review_sentiment_model.joblib
+
+4. VADER
+- Accuracy: 0.386
+- Macro F1-score: 0.32
+- Negative F1-score: 0.41
+- Neutral F1-score: 0.08
+- Positive F1-score: 0.48
+- Predictions: data/processed/vader_review_predictions.csv
+
+5. KEY FINDINGS
+- VADER had 38.6% accuracy on all 500 reviews.
+- LinearSVC had 37% accuracy on its 100-review test set.
+- These scores should not be compared as a controlled benchmark
+  because the evaluation sets differ.
+- Neutral sentiment was difficult for both approaches.
+- Frequent terms included food, order, delivery, cold, and late.
+- Repeated synthetic review text had inconsistent ratings,
+  making rating-derived sentiment labels noisy.
+
+6. LIMITATIONS
+- Review text is synthetic and highly repetitive.
+- Identical text sometimes has different ratings.
+- Ratings are weak sentiment labels, not verified ground truth.
+- Results may not generalize to real customer reviews.
+- Prep time was not available in the source data.
+
+7. BUSINESS IMPLICATIONS
+- Food temperature and delivery delays are candidate complaint
+  themes worth investigating in real customer feedback.
+- Collect more varied, realistic reviews and validate sentiment
+  labels before deploying an automated sentiment system.
+- Review delivery performance and food quality alongside
+  customer ratings before making operational decisions.
+
+8. OUTPUTS
+- data/processed/cleaned_reviews.csv
+- data/processed/reviews_tfidf.npz
+- data/processed/tfidf_features.csv
+- models/review_sentiment_model.joblib
+- data/processed/vader_review_predictions.csv
+- reports/sentiment_insights.csv
+- reports/day3_sentiment_evaluation.txt
