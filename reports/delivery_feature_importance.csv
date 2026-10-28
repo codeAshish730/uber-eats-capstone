@@ -1,0 +1,12 @@
+feature,importance
+numeric__order_amount,0.37660242891592305
+numeric__distance_km,0.3206293410971377
+numeric__rating,0.1411954156980722
+categorical__vehicle_type_Car,0.026258803642401293
+categorical__vehicle_type_Scooter,0.02445207460398029
+categorical__cuisine_Chinese,0.020326142344011408
+categorical__cuisine_American,0.020180436805998098
+categorical__cuisine_Indian,0.020080275811038387
+categorical__vehicle_type_Bike,0.019619461870911285
+categorical__cuisine_Mexican,0.0195108953493343
+categorical__cuisine_Italian,0.011144723861192059

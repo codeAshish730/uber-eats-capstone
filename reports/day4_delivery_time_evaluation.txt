@@ -1,0 +1,74 @@
+# Day 4: Delivery Time Regression — Evaluation Report
+
+## Objective
+Build and compare regression models to predict delivery time in minutes using the available synthetic Uber Eats dataset.
+
+## Dataset and Features
+- Records: 1,000 deliveries
+- Target: `delivery_time_min`
+- Features: distance, order amount, restaurant rating, cuisine, and vehicle type
+- Train/test split: 80% training, 20% testing
+- Random state: 42
+
+The source data did not include traffic, weather, restaurant preparation time, or item count. These were therefore excluded.
+
+## Exploratory Data Analysis
+- Mean delivery time: 42.786 minutes
+- Median delivery time: 44 minutes
+- Minimum: 15 minutes
+- Maximum: 70 minutes
+- IQR-based potential outliers: 0
+
+Distance and order amount had correlations close to zero with delivery time in this dataset. All order timestamps fell on the same weekday and around the same hour, so hour and weekday features had no useful variation.
+
+## Model Comparison
+
+| Model | MAE | RMSE | R² |
+|---|---:|---:|---:|
+| Baseline | 14.908 | 16.795 | -0.013 |
+| Ridge Regression | 14.792 | 16.799 | -0.013 |
+| Random Forest | 14.930 | 17.141 | -0.055 |
+
+MAE and RMSE are measured in minutes.
+
+Ridge Regression had the lowest test MAE, but its improvement over the baseline was only about 0.116 minutes. This difference is too small to claim a meaningful predictive improvement. The negative R² values indicate that the models did not outperform a constant mean-based prediction on the test set under the R² metric.
+
+## Cross-Validation
+Five-fold cross-validation on the training set produced:
+- Ridge Regression: mean MAE of 13.461 minutes
+- Random Forest: mean MAE of 13.560 minutes
+
+## Feature Importance
+Random Forest's three highest feature-importance scores were:
+1. Order amount: 0.3766
+2. Distance: 0.3206
+3. Restaurant rating: 0.1412
+
+These scores describe model behavior, not causal relationships. Given the weak test performance, they should be treated as exploratory rather than definitive business drivers.
+
+## Business Interpretation
+The current features do not predict delivery time reliably enough for operational decisions. A business should not use this model to promise delivery windows or assess driver performance.
+
+Future versions should collect more informative operational variables, including:
+- Restaurant preparation time
+- Traffic conditions
+- Weather
+- Actual route distance and travel time
+- Order item count and complexity
+- Pickup and drop-off timestamps
+- Time-of-day variation across multiple days
+
+The synthetic dataset's limited timestamp variation and weak feature-target relationships restrict what the models can learn.
+
+## Recommendation
+Keep Ridge Regression as the provisional model for further experimentation because it achieved the lowest test MAE and slightly lower cross-validation MAE than Random Forest. However, retain the baseline as the benchmark and do not deploy the current model for real delivery-time estimates.
+
+## Deliverables
+- Feature-engineered dataset: `data/processed/delivery_features.csv`
+- Correlation report: `reports/delivery_correlations.csv`
+- Model comparison: `reports/delivery_model_comparison.csv`
+- Test predictions: `reports/delivery_test_predictions.csv`
+- Feature importance: `reports/delivery_feature_importance.csv`
+- Actual-vs-predicted chart: `reports/figures/delivery_actual_vs_predicted.png`
+- Feature-importance chart: `reports/figures/delivery_feature_importance.png`
+- EDA charts: `reports/figures/delivery_time_distribution.png`, `reports/figures/delivery_time_vs_distance.png`, `reports/figures/delivery_time_vs_order_amount.png`
