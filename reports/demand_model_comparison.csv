@@ -1,0 +1,4 @@
+model,status,MAE,RMSE,MAPE,reason
+Baseline,Not evaluated,,,,Insufficient hourly history
+ARIMA,Not trained,,,,Only one hourly observation
+Prophet,Not trained,,,,Only one hourly observation

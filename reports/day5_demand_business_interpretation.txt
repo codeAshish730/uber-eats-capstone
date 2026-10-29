@@ -1,0 +1,46 @@
+DAY 5: HOURLY DEMAND FORECASTING — BUSINESS INTERPRETATION
+
+1. OBJECTIVE
+
+The objective was to analyze hourly Uber Eats order demand, identify time-based patterns, and evaluate forecasting models to support operational planning.
+
+2. DATASET FINDINGS
+
+- Total orders: 1,000
+- Available hourly observations: 1
+- Observed hour: October 23, 2026, 3:00 PM
+- Orders in that hour: 1,000
+
+All orders fall within the same hourly period in the available dataset. This limits the analysis of demand over time.
+
+3. TIME-SERIES ANALYSIS
+
+Hourly demand aggregation and visualization were completed.
+
+Trend, seasonality, and residual decomposition could not be performed meaningfully because only one hourly observation is available.
+
+The Augmented Dickey-Fuller (ADF) stationarity test was not performed because the dataset is insufficient for the test.
+
+4. FORECASTING MODELS
+
+ARIMA and Prophet were considered, but neither model was trained because sufficient historical hourly observations were unavailable.
+
+A chronological training and test split could not be created reliably. Consequently, MAE, RMSE, and MAPE are unavailable, and no model performance ranking can be reported.
+
+5. BUSINESS IMPLICATIONS
+
+The current dataset cannot reliably identify peak ordering hours, weekday or weekend patterns, or future demand.
+
+Uber Eats should avoid using this dataset alone to schedule drivers, allocate restaurant capacity, or predict future order volumes.
+
+For a meaningful demand forecasting system, collect order timestamps across multiple weeks or months, including weekdays, weekends, holidays, and different times of day.
+
+With sufficient historical data, the team can evaluate ARIMA and Prophet using chronological validation and compare MAE, RMSE, and MAPE.
+
+6. CONCLUSION
+
+The Day 5 data preparation, exploratory checks, model feasibility checks, and documentation have been completed.
+
+The forecasting objective remains limited by the available data. Reliable forecasts and model comparisons require a larger historical dataset with observations across many hours and days.
+
+The results have been documented transparently without fabricating forecasts or evaluation metrics.

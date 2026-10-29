@@ -1,0 +1,6 @@
+HOURLY DEMAND STATIONARITY TEST
+===================================
+Number of observations: 1
+
+ADF test not performed: insufficient observations or no variation in hourly demand.
+Stationarity cannot be determined from the available data.

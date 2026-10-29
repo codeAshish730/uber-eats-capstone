@@ -1,0 +1,6 @@
+HOURLY DEMAND DECOMPOSITION
+===================================
+Number of hourly observations: 1
+
+Decomposition not performed: only one hourly observation is available.
+Trend, seasonality, and residual noise cannot be separated from one observation.

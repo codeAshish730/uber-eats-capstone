@@ -1,0 +1,6 @@
+ARIMA DEMAND FORECAST
+==============================
+Hourly observations: 1
+
+ARIMA model not trained: insufficient historical observations or demand variation.
+A reliable future demand forecast cannot be produced from the available data.
