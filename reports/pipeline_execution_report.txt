@@ -1,0 +1,418 @@
+UBER EATS END-TO-END ML PIPELINE REPORT
+=============================================
+Started: 2026-10-29 15:16:34
+
+
+Customer feature engineering: SUCCESS
+Script: src/prepare_customer_features.py
+Customer feature engineering complete.
+Customers: 199
+
+Feature columns:
+['total_orders', 'avg_order_value', 'total_spending', 'weekend_orders', 'late_night_orders', 'ordering_frequency', 'avg_rating_given']
+
+Preview:
+   total_orders  avg_order_value  ...  ordering_frequency  avg_rating_given
+0             7        52.942857  ...                 7.0          3.400000
+1             2        66.405000  ...                 2.0          5.000000
+2             6        52.323333  ...                 6.0          3.000000
+3            10        61.705000  ...                10.0          2.666667
+4             4        63.190000  ...                 4.0          5.000000
+
+[5 rows x 7 columns]
+
+Missing values per feature:
+total_orders          0
+avg_order_value       0
+total_spending        0
+weekend_orders        0
+late_night_orders     0
+ordering_frequency    0
+avg_rating_given      0
+dtype: int64
+
+Customer segmentation: SUCCESS
+Script: src/customer_clustering.py
+k=2: inertia=617.69, silhouette=0.332
+k=3: inertia=478.79, silhouette=0.279
+k=4: inertia=390.43, silhouette=0.287
+k=5: inertia=329.76, silhouette=0.274
+k=6: inertia=291.66, silhouette=0.275
+k=7: inertia=262.60, silhouette=0.274
+k=8: inertia=237.94, silhouette=0.276
+
+Selected k=2 by silhouette score.
+
+Saved evaluation results, cluster assignments, model, scaler, and plots.
+
+Customer cluster profiles: SUCCESS
+Script: src/customer_cluster_profiles.py
+Customer Cluster Profiles:
+         total_orders  avg_order_value  total_spending  weekend_orders  late_night_orders  ordering_frequency  avg_rating_given
+cluster                                                                                                                        
+0                7.68            55.73          427.34             0.0                0.0                7.68              3.11
+1                3.74            55.68          209.74             0.0                0.0                3.74              2.93
+
+Profiles saved to reports/customer_cluster_profiles.csv
+
+Restaurant feature engineering: SUCCESS
+Script: src/prepare_restaurant_features.py
+Restaurant features saved successfully!
+Number of restaurants: 30
+ restaurant_id              restaurant_name             city  cuisine  rating  total_orders  revenue  cancellation_rate  avg_review_rating  avg_delivery_time
+             1                   Conley PLC    Rodriguezport   Indian     3.1            26  1499.10           0.153846           2.941176          41.230769
+             2                   Turner Inc   South Danielle  Chinese     3.5            38  2117.08           0.263158           3.210526          45.131579
+             3  Bryant, Rodriguez and Stein Lake Zacharybury  Italian     4.5            38  2080.13           0.289474           2.625000          43.868421
+             4 Thomas, Patterson and Mendez       New Robert American     3.2            33  1632.51           0.303030           3.222222          45.636364
+             5      Barnett, Mills and Ward  South Morganton  Mexican     3.1            38  2187.03           0.447368           3.200000          38.842105
+
+Restaurant segmentation: SUCCESS
+Script: src/restaurant_clustering.py
+Restaurant K-Means evaluation:
+ k    inertia  silhouette_score
+ 2 108.066087          0.256552
+ 3  88.109664          0.192584
+ 4  72.966032          0.198067
+ 5  60.818590          0.199848
+ 6  52.867987          0.210293
+
+Best number of clusters: 2
+Restaurant cluster assignments saved.
+
+Restaurant cluster profiles: SUCCESS
+Script: src/restaurant_cluster_profiles.py
+Restaurant Cluster Profiles:
+         restaurant_count  avg_orders  avg_revenue  avg_rating  avg_cancellation_rate  avg_delivery_time
+cluster                                                                                                 
+0                      20       35.65      2012.37        2.96                   0.35              43.76
+1                      10       28.70      1563.42        3.13                   0.34              40.59
+
+Profiles saved to reports/restaurant_cluster_profiles.csv
+
+Review cleaning: SUCCESS
+Script: src/clean_reviews.py
+Cleaned reviews saved!
+                           review_text             cleaned_review  review_rating
+       Order was okay, nothing special order okay nothing special              4
+   Food was cold and delivery was late    food cold delivery late              1
+   Food was cold and delivery was late    food cold delivery late              4
+       Order was okay, nothing special order okay nothing special              5
+       Order was okay, nothing special order okay nothing special              5
+   Food was cold and delivery was late    food cold delivery late              4
+Very disappointed with this experience    disappointed experience              4
+Very disappointed with this experience    disappointed experience              4
+       Order was okay, nothing special order okay nothing special              3
+   Food was cold and delivery was late    food cold delivery late              2
+
+TF-IDF feature extraction: SUCCESS
+Script: src/tfidf_reviews.py
+TF-IDF matrix saved!
+Matrix shape: (500, 32)
+
+Top features:
+                feature
+                   cold
+          cold delivery
+              delicious
+         delicious food
+               delivery
+          delivery late
+           disappointed
+disappointed experience
+                 driver
+              excellent
+         excellent food
+             experience
+                   food
+              food cold
+             food order
+             food quick
+               friendly
+        friendly driver
+                   good
+           good quality
+
+Sentiment model training: SUCCESS
+Script: src/train_sentiment.py
+Accuracy: 0.37
+
+Classification report:
+              precision    recall  f1-score   support
+
+    negative       0.39      0.47      0.43        40
+     neutral       0.18      0.18      0.18        17
+    positive       0.44      0.35      0.39        43
+
+    accuracy                           0.37       100
+   macro avg       0.34      0.33      0.33       100
+weighted avg       0.37      0.37      0.37       100
+
+Confusion matrix (negative, neutral, positive):
+[[19  8 13]
+ [ 8  3  6]
+ [22  6 15]]
+
+Model saved to models/review_sentiment_model.joblib
+
+Sentiment insights: SUCCESS
+Script: src/sentiment_insights.py
+Top words for negative reviews:
+food: 90
+order: 73
+delivery: 59
+okay: 42
+special: 42
+good: 39
+quality: 39
+friendly: 39
+driver: 39
+excellent: 31
+
+Top words for neutral reviews:
+food: 46
+order: 37
+delivery: 26
+delicious: 20
+excellent: 19
+quick: 19
+okay: 17
+special: 17
+good: 12
+quality: 12
+
+Top words for positive reviews:
+food: 122
+delivery: 81
+order: 71
+cold: 47
+late: 47
+delicious: 41
+good: 39
+quality: 39
+friendly: 39
+driver: 39
+
+Insights saved to reports/sentiment_insights.csv
+
+Delivery feature engineering: SUCCESS
+Script: src/prepare_delivery_features.py
+Feature-engineered dataset saved to: data/processed/delivery_features.csv
+Dataset shape: (1000, 15)
+
+Columns:
+['delivery_id', 'order_id', 'driver_id', 'delivery_time_min', 'distance_km', 'customer_id', 'restaurant_id', 'order_date', 'order_amount', 'order_status', 'rating', 'cuisine', 'vehicle_type', 'order_hour', 'day_of_week']
+
+Missing values:
+delivery_id          0
+order_id             0
+driver_id            0
+delivery_time_min    0
+distance_km          0
+customer_id          0
+restaurant_id        0
+order_date           0
+order_amount         0
+order_status         0
+rating               0
+cuisine              0
+vehicle_type         0
+order_hour           0
+day_of_week          0
+
+Preview:
+ delivery_id  order_id  driver_id  delivery_time_min  distance_km  customer_id  restaurant_id                 order_date  order_amount order_status  rating  cuisine vehicle_type  order_hour  day_of_week
+           1         1         32                 49          5.3           36              8 2026-10-23 15:17:21.021484         77.05      Delayed     3.4 American      Scooter          15            4
+           2         2         32                 17          2.3           68             24 2026-10-23 15:16:14.787462         62.61      Delayed     3.1   Indian      Scooter          15            4
+           3         3         15                 53          4.1          103             12 2026-10-23 15:12:54.660837         29.74    Delivered     4.4  Italian      Scooter          15            4
+           4         4         34                 45          1.0          131             16 2026-10-23 15:14:46.284106         18.18    Delivered     3.2  Mexican          Car          15            4
+           5         5         40                 27         12.3           29              5 2026-10-23 15:14:43.028045         66.47      Delayed     3.1  Mexican      Scooter          15            4
+
+Delivery EDA: SUCCESS
+Script: src/delivery_eda.py
+DELIVERY TIME SUMMARY
+count    1000.000000
+mean       42.786000
+std        15.855965
+min        15.000000
+25%        29.000000
+50%        44.000000
+75%        56.000000
+max        70.000000
+Name: delivery_time_min, dtype: float64
+
+IQR outlier boundaries: -11.5 to 96.5
+Number of potential outliers: 0
+
+Correlation with delivery time:
+delivery_time_min    1.000000
+rating               0.008483
+distance_km          0.008201
+order_amount        -0.015797
+order_hour                NaN
+day_of_week               NaN
+Name: delivery_time_min, dtype: float64
+
+EDA charts and correlation report saved.
+
+Delivery model evaluation: SUCCESS
+Script: src/train_delivery_models.py
+Baseline
+MAE:  14.908 minutes
+RMSE: 16.795 minutes
+R2:   -0.013
+
+Ridge Regression
+MAE:  14.792 minutes
+RMSE: 16.799 minutes
+R2:   -0.013
+
+Random Forest
+MAE:  14.930 minutes
+RMSE: 17.141 minutes
+R2:   -0.055
+
+Model comparison saved to reports/delivery_model_comparison.csv
+Test predictions saved to reports/delivery_test_predictions.csv
+
+5-FOLD CROSS-VALIDATION (MAE)
+Ridge Regression: mean MAE = 13.461 minutes
+Random Forest: mean MAE = 13.560 minutes
+
+Delivery feature importance: SUCCESS
+Script: src/delivery_feature_importance.py
+Top 10 features:
+                          feature  importance
+            numeric__order_amount    0.376602
+             numeric__distance_km    0.320629
+                  numeric__rating    0.141195
+    categorical__vehicle_type_Car    0.026259
+categorical__vehicle_type_Scooter    0.024452
+     categorical__cuisine_Chinese    0.020326
+    categorical__cuisine_American    0.020180
+      categorical__cuisine_Indian    0.020080
+   categorical__vehicle_type_Bike    0.019619
+     categorical__cuisine_Mexican    0.019511
+
+Saved reports/delivery_feature_importance.csv
+Saved reports/figures/delivery_feature_importance.png
+
+Hourly demand preparation: SUCCESS
+Script: src/prepare_hourly_demand.py
+Saved: data/processed/hourly_demand.csv
+Hourly dataset shape: (1, 2)
+               hour  order_count
+2026-10-23 15:00:00         1000
+
+Total orders represented: 1000
+
+WARNING: The source data covers only one hour.
+This dataset is not sufficient for reliable time-series forecasting.
+
+Demand exploration: SUCCESS
+Script: src/explore_hourly_demand.py
+HOURLY DEMAND SUMMARY
+count       1.0
+mean     1000.0
+std         NaN
+min      1000.0
+25%      1000.0
+50%      1000.0
+75%      1000.0
+max      1000.0
+Name: order_count, dtype: float64
+
+Hourly demand data:
+               hour  order_count
+2026-10-23 15:00:00         1000
+
+Chart saved to reports/figures/hourly_demand.png
+
+Limitation: Only one hourly observation is available.
+Daily, weekly, and seasonal patterns cannot be assessed.
+
+Demand decomposition check: SUCCESS
+Script: src/demand_decomposition.py
+HOURLY DEMAND DECOMPOSITION
+===================================
+Number of hourly observations: 1
+
+Decomposition not performed: only one hourly observation is available.
+Trend, seasonality, and residual noise cannot be separated from one observation.
+
+Report saved to reports/demand_decomposition.txt
+
+Demand stationarity check: SUCCESS
+Script: src/test_demand_stationarity.py
+HOURLY DEMAND STATIONARITY TEST
+===================================
+Number of observations: 1
+
+ADF test not performed: insufficient observations or no variation in hourly demand.
+Stationarity cannot be determined from the available data.
+
+Report saved to reports/demand_stationarity.txt
+
+ARIMA feasibility check: SUCCESS
+Script: src/train_arima.py
+ARIMA DEMAND FORECAST
+==============================
+Hourly observations: 1
+
+ARIMA model not trained: insufficient historical observations or demand variation.
+A reliable future demand forecast cannot be produced from the available data.
+
+Report saved to reports/arima_demand_evaluation.txt
+
+Prophet feasibility check: SUCCESS
+Script: src/train_prophet.py
+PROPHET DEMAND FORECAST
+==============================
+Hourly observations: 1
+
+Prophet model not trained: insufficient historical observations or demand variation.
+A reliable future demand forecast cannot be produced from the available data.
+
+Report saved to reports/prophet_demand_evaluation.txt
+
+Demand model comparison: SUCCESS
+Script: src/compare_demand_models.py
+DEMAND MODEL COMPARISON
+==============================
+   model        status  MAE RMSE MAPE                      reason
+Baseline Not evaluated None None None Insufficient hourly history
+   ARIMA   Not trained None None None Only one hourly observation
+ Prophet   Not trained None None None Only one hourly observation
+
+Comparison saved to reports/demand_model_comparison.csv
+
+MAE, RMSE, and MAPE are unavailable because the models could not be evaluated on a chronological test set.
+
+
+EXECUTION SUMMARY
+                          step                             script  status
+  Customer feature engineering   src/prepare_customer_features.py SUCCESS
+         Customer segmentation         src/customer_clustering.py SUCCESS
+     Customer cluster profiles   src/customer_cluster_profiles.py SUCCESS
+Restaurant feature engineering src/prepare_restaurant_features.py SUCCESS
+       Restaurant segmentation       src/restaurant_clustering.py SUCCESS
+   Restaurant cluster profiles src/restaurant_cluster_profiles.py SUCCESS
+               Review cleaning               src/clean_reviews.py SUCCESS
+     TF-IDF feature extraction               src/tfidf_reviews.py SUCCESS
+      Sentiment model training             src/train_sentiment.py SUCCESS
+            Sentiment insights          src/sentiment_insights.py SUCCESS
+  Delivery feature engineering   src/prepare_delivery_features.py SUCCESS
+                  Delivery EDA                src/delivery_eda.py SUCCESS
+     Delivery model evaluation       src/train_delivery_models.py SUCCESS
+   Delivery feature importance src/delivery_feature_importance.py SUCCESS
+     Hourly demand preparation       src/prepare_hourly_demand.py SUCCESS
+            Demand exploration       src/explore_hourly_demand.py SUCCESS
+    Demand decomposition check        src/demand_decomposition.py SUCCESS
+     Demand stationarity check    src/test_demand_stationarity.py SUCCESS
+       ARIMA feasibility check                 src/train_arima.py SUCCESS
+     Prophet feasibility check               src/train_prophet.py SUCCESS
+       Demand model comparison       src/compare_demand_models.py SUCCESS
+
+DATA LIMITATIONS
+- Demand history currently contains only one hourly observation.
+- Tip prediction is not included until a suitable tip target is confirmed.
+- A successful script run does not by itself establish model quality.

@@ -1,0 +1,22 @@
+step,script,status
+Customer feature engineering,src/prepare_customer_features.py,SUCCESS
+Customer segmentation,src/customer_clustering.py,SUCCESS
+Customer cluster profiles,src/customer_cluster_profiles.py,SUCCESS
+Restaurant feature engineering,src/prepare_restaurant_features.py,SUCCESS
+Restaurant segmentation,src/restaurant_clustering.py,SUCCESS
+Restaurant cluster profiles,src/restaurant_cluster_profiles.py,SUCCESS
+Review cleaning,src/clean_reviews.py,SUCCESS
+TF-IDF feature extraction,src/tfidf_reviews.py,SUCCESS
+Sentiment model training,src/train_sentiment.py,SUCCESS
+Sentiment insights,src/sentiment_insights.py,SUCCESS
+Delivery feature engineering,src/prepare_delivery_features.py,SUCCESS
+Delivery EDA,src/delivery_eda.py,SUCCESS
+Delivery model evaluation,src/train_delivery_models.py,SUCCESS
+Delivery feature importance,src/delivery_feature_importance.py,SUCCESS
+Hourly demand preparation,src/prepare_hourly_demand.py,SUCCESS
+Demand exploration,src/explore_hourly_demand.py,SUCCESS
+Demand decomposition check,src/demand_decomposition.py,SUCCESS
+Demand stationarity check,src/test_demand_stationarity.py,SUCCESS
+ARIMA feasibility check,src/train_arima.py,SUCCESS
+Prophet feasibility check,src/train_prophet.py,SUCCESS
+Demand model comparison,src/compare_demand_models.py,SUCCESS

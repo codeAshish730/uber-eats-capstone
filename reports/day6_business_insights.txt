@@ -1,0 +1,53 @@
+DAY 6: UBER EATS BUSINESS INSIGHTS AND RECOMMENDATIONS
+
+1. CUSTOMER SEGMENTATION
+
+Customer Cluster 0 averages 7.68 orders and 427.34 in total spending per customer. Cluster 1 averages 3.74 orders and 209.74 in spending.
+
+Recommendation: Prioritize retention initiatives for Cluster 0. Test targeted promotions for Cluster 1 to encourage repeat orders. Measure results before expanding campaigns.
+
+Limitation: The customer segments are based on synthetic data, and weekend and late-night order counts are zero.
+
+2. RESTAURANT SEGMENTATION
+
+Restaurant Cluster 0 contains 20 restaurants and averages 35.65 orders, 2012.37 in revenue, a rating of 2.96, a cancellation rate of 0.35, and a delivery time of 43.76 minutes.
+
+Cluster 1 contains 10 restaurants and averages 28.70 orders, 1563.42 in revenue, a rating of 3.13, a cancellation rate of 0.34, and a delivery time of 40.59 minutes.
+
+Recommendation: Review cancellations, food quality, and fulfillment processes in Cluster 0 first. Track cancellation rates, customer ratings, and delivery times to assess improvement.
+
+3. CUSTOMER SENTIMENT
+
+The sentiment model achieved 37% test accuracy. Review text includes references to cold food and late delivery, but repeated synthetic reviews sometimes have conflicting ratings.
+
+Recommendation: Investigate cold-food complaints and late deliveries using verified customer feedback. Improve the review dataset before using automated sentiment predictions for operational decisions.
+
+Limitation: The current sentiment model is not reliable enough for automated high-impact decisions.
+
+4. DELIVERY-TIME PREDICTION
+
+Ridge Regression achieved a test MAE of 14.792 minutes, RMSE of 16.799 minutes, and R-squared of -0.013. Random Forest achieved a test MAE of 14.930 minutes and R-squared of -0.055.
+
+Recommendation: Improve the model using more informative data, such as actual route distance, traffic, weather, restaurant preparation time, and pickup waiting time. Evaluate improvements against a baseline on held-out data.
+
+Limitation: Current features have very weak correlations with delivery time. Feature importance does not establish causation.
+
+5. TIP PREDICTION
+
+Tip prediction has not been implemented because a suitable tip amount target has not been identified in the available project data.
+
+Recommendation: Obtain reliable tip amount data linked to orders before building and evaluating a tip prediction model.
+
+6. DEMAND FORECASTING
+
+The hourly demand dataset contains 1,000 orders aggregated into a single hour on October 23, 2026. ARIMA and Prophet were not trained, and no forecast accuracy metrics are available.
+
+Recommendation: Collect order history across multiple weeks or months. Then evaluate forecasts using chronological validation and MAE, RMSE, and MAPE before planning rider capacity by hour or location.
+
+7. OVERALL CONCLUSION
+
+The integrated pipeline successfully executes the existing feature engineering, segmentation, sentiment, delivery evaluation, and demand feasibility scripts.
+
+The current results support preliminary operational investigations, not fully reliable automated decisions. Synthetic data, limited temporal coverage, weak predictive performance, and missing tip data remain important limitations.
+
+Future work should prioritize better historical data, stronger model validation, reproducible runs, and monitoring of business outcomes after recommendations are implemented.
